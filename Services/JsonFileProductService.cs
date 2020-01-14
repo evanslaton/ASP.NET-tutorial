@@ -35,17 +35,17 @@ namespace Store.Services
 
         public void AddRating(string productId, int rating)
         {
-            var products = GetProducts();
+            IEnumerable<Product> products = GetProducts();
 
-            if (products.First(x => x.Id == productId).Ratings == null)
+            if (products.First(product => product.Id == productId).Ratings == null)
             {
-                products.First(x => x.Id == productId).Ratings = new int[] { rating };
+                products.First(product => product.Id == productId).Ratings = new int[] { rating };
             }
             else
             {
-                var ratings = products.First(x => x.Id == productId).Ratings.ToList();
+                var ratings = products.First(product => product.Id == productId).Ratings.ToList();
                 ratings.Add(rating);
-                products.First(x => x.Id == productId).Ratings = ratings.ToArray();
+                products.First(product => product.Id == productId).Ratings = ratings.ToArray();
             }
 
             using (var outputStream = File.OpenWrite(JsonFileName))
