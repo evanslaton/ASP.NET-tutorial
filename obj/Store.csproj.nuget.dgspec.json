@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\evans\\source\\repos\\Store\\Store.csproj": {}
+    "C:\\Users\\evans\\source\\Store\\Store.csproj": {}
   },
   "projects": {
-    "C:\\Users\\evans\\source\\repos\\Store\\Store.csproj": {
+    "C:\\Users\\evans\\source\\Store\\Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\evans\\source\\repos\\Store\\Store.csproj",
+        "projectUniqueName": "C:\\Users\\evans\\source\\Store\\Store.csproj",
         "projectName": "Store",
-        "projectPath": "C:\\Users\\evans\\source\\repos\\Store\\Store.csproj",
+        "projectPath": "C:\\Users\\evans\\source\\Store\\Store.csproj",
         "packagesPath": "C:\\Users\\evans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\evans\\source\\repos\\Store\\obj\\",
+        "outputPath": "C:\\Users\\evans\\source\\Store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\evans\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
